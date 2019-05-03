@@ -2,16 +2,20 @@
 
 // Config vars
 // Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
+$kaldi-red: #fff
+$kaldi-red-invert: #000
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
-$black: #2b2523
+$black: #020924
+
+body
+  background-color:#000
 
 .navbar .navbar-menu
   box-shadow:none !important
+
 
 .content .taglist
   list-style: none
@@ -57,14 +61,14 @@ $black: #2b2523
     font-size: 18px
     font-size: 1rem
     line-height: 1.25
-    background-color: #fff
+    background-color: #000
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: #ccc
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    -webkit-box-shadow: inset 0 0 0 2px #020924
+    box-shadow: inset 0 0 0 2px #499cd6
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
@@ -77,7 +81,8 @@ $black: #2b2523
 .icon svg
   width: 1.5rem
   height: 1.5rem
-  fill: currentColor
+  fill: white
+  color: white
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
 footer.footer
@@ -112,9 +117,13 @@ $menu-label-color: $white-ter
     vertical-align: middle
     display: inline
 
+
+@import "~bulma"
+
+
 // blog roll
-.blog-list-item.is-featured
-  background-color: #d6400033;
+.blog-list-item
+  background-color: #020924;
 .blog-list-item header
   display: flex;
   margin-bottom: 1em;
@@ -122,9 +131,20 @@ $menu-label-color: $white-ter
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
 
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content p
+  color: #cccccc;
 
-@import "~bulma"
+.navbar,
+.navbar-menu
+  background-color: #000
+  color: #ccc
 
+.navbar-item
+  color: #ccc
 
 // responsiveness
 +tablet-only
